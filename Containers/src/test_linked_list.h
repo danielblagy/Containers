@@ -9,7 +9,7 @@
 void print_list(LinkedList<std::string>& l)
 {
 	// print out the list
-	LinkedList<std::string>::iterator it = l.get_interator();
+	LinkedList<std::string>::iterator it = l.get_iterator();
 	while (!it.end())
 	{
 		std::cout << it.value() << "  ";
@@ -30,7 +30,7 @@ void test_ll()
 		print_list(l);
 	}
 
-	LinkedList<std::string>::iterator it = l.get_interator();
+	LinkedList<std::string>::iterator it = l.get_iterator();
 
 	it.next();
 	l.insert_after(it, "insertion_1");

@@ -89,7 +89,7 @@ public:
 		delete node_to_remove;
 	}
 
-	iterator get_interator()
+	iterator get_iterator()
 	{
 		return iterator(front);
 	}
